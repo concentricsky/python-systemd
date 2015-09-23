@@ -8,3 +8,6 @@ build
 
 # specific files
 MANIFEST
+
+# ENV
+env
