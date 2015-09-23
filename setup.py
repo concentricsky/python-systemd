@@ -41,5 +41,10 @@ setup(name='python-systemd',
 		   'Operating System :: POSIX :: Linux',
                    'Programming Language :: Python',
                    'Topic :: Libraries :: Python Modules',]
-      )
+      ),
+      install_requires=[
+        'python-dbus',
+        'systemd',
+      ]
+
 
