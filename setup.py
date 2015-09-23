@@ -3,6 +3,7 @@ import os
 
 from systemd import get_version
 
+execfile(os.path.join(os.path.dirname(__file__), 'systemd/version.py'))
 
 # Compile the list of packages available, because distutils doesn't have
 # an easy way to do this.
@@ -27,7 +28,7 @@ for dirpath, dirnames, filenames in os.walk('systemd'):
 
 
 setup(name='python-systemd',
-      version=get_version().replace(' ', '-'),
+      version=".".join(map(str, VERSION)),
       description='Systemd interfaces wrapper',
       author='Wiliam Souza',
       author_email='wiliam@mandriva.com',
