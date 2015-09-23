@@ -35,16 +35,16 @@ setup(name='python-systemd',
       package_dir={'systemd': 'systemd'},
       packages=packages,
       package_data={'systemd': data_files},
+      install_requires=[
+        'dbus-python',
+        'systemd',
+      ],
       classifiers=['Development Status :: 1 - Planning',
                    'Intended Audience :: Developers',
                    'License :: ',
 		   'Operating System :: POSIX :: Linux',
                    'Programming Language :: Python',
                    'Topic :: Libraries :: Python Modules',]
-      ),
-      install_requires=[
-        'python-dbus',
-        'systemd',
-      ]
+      )
 
 
